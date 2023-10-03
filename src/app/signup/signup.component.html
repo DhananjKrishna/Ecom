@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex justify-center ...">
+        <div class="cons">
+            <h1>SignUp</h1>
+            <form #signUp="ngForm" (ngSubmit)="signup(signUp.value)">
+                <div class="con">
+                    <label>Username : </label>
+                    <input type="text" ngModel placeholder="Enter Username" name="username" required><br>
+                    <label>Password : </label>
+                    <input type="password" ngModel placeholder="Enter Password" name="password" required><br>
+                    <label>Conform Password : </label>
+                    <input type="password" ngModel placeholder="Enter Conform Password" name="cpassword" required><br>
+                    <button type="submit">SignUp</button>
+                   
+                </div>
+            </form>
+            
+        </div>
+    </div>
+
+</body>
+
+</html>
